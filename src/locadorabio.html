@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="locadorabio.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Locadora-bio</title>
+</head>
+<body id="body">
+    <div id="aba">
+        <p id="nome-sidebar">
+            <span id="print2">Print</span>
+            <span class="parenteses-span">(</span>
+            <span class="nome-span">"Gustavo_dev"</span>
+            <span class="parenteses-span">)</span>
+        </p>
+        <section class="form">
+            <input type="text" name="nome" id="input-nome" placeholder="Nome:">
+            <input type="email" name="email" id="email" placeholder="Email:">
+            <div id="password">
+                <input type="password" name="senha" id="senha" placeholder="Senha:">
+                <span><i class="bi bi-eye" id="btn-senha" onclick="mostrar_senha()"></i></span>
+            </div>
+            <input type="button" id="entrar" value="ENTRAR">
+        </section>
+    </div>
+    <header>
+        <div id="header-content">
+            <p id="nome"><span id="print">Print</span><span class="parenteses-span">(</span><span class="nome-span">"Gustavo_dev"</span><span class="parenteses-span">)</span></p>
+                <div id="header-hrefs">
+                    <p><a href="#" id="home" class="hrefs">Home</a></p>
+                    <p><a href="#" id="especialidades" class="hrefs">especialidades</a></p>
+                    <p><a href="#name-projetos" id="projetos" class="hrefs">projetos</a></p>
+                    <p><a href="#" id="contato" class="hrefs">contato</a></p>
+                </div>
+            </div>
+    </header>
+    <div id="side-div">
+        <span id="side-bar-button"><i class="bi bi-list" onclick="sidebar()" id="list-bi"></i></span>
+    </div>
+    <div id="toggle-div">
+        <span id="button-toggle"><i class="bi bi-toggle-off" onclick="mudar_tema()" id="btn-toggle"></i></span>
+    </div>
+    <script src="locadora.js" defer></script>
+    <main>
+        <div id="main-content">
+            <h1 id="projeto-locadora">PROJETO-LOCADORA</h1>
+            <div id="texto">
+                <p style="text-align: justify;">Nessa aba você verá o passo a passo da construção da locadora de veiculos. <br> Estava começando a desenvolver meus mini-projetos e estava indo atrás de estágios na área</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

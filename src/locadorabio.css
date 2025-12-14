@@ -1,0 +1,18 @@
+#projeto-locadora{
+    text-align: center;
+}
+#main-content{
+    background-color: rgb(184, 184, 184);
+    width: 50%;
+    margin: auto;
+    height: 300px;
+}
+#header-content{
+    margin-bottom: 0px;
+}
+#texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'tilt Warp';
+}

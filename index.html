@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Sobre Mim</title>
+</head>
+<body id="body">
+    <div id="aba">
+        <p id="nome-sidebar">
+            <span id="print2">Print</span>
+            <span class="parenteses-span">(</span>
+            <span class="nome-span">"Gustavo_dev"</span>
+            <span class="parenteses-span">)</span>
+        </p>
+        <section class="form">
+            <input type="text" name="nome" id="input-nome" placeholder="Nome:">
+            <input type="email" name="email" id="email" placeholder="Email:">
+            <div id="password">
+                <input type="password" name="senha" id="senha" placeholder="Senha:">
+                <span><i class="bi bi-eye" id="btn-senha" onclick="mostrar_senha()"></i></span>
+            </div>
+            <input type="button" id="entrar" value="ENTRAR">
+        </section>
+    </div>
+    <header>
+        <div id="header-content">
+            <p id="nome"><span id="print">Print</span><span class="parenteses-span">(</span><span class="nome-span">"Gustavo_dev"</span><span class="parenteses-span">)</span></p>
+            <div id="header-hrefs">
+                <p><a href="#" id="home" class="hrefs">Home</a></p>
+                <p><a href="#" id="especialidades" class="hrefs">especialidades</a></p>
+                <p><a href="#name-projetos" id="projetos" class="hrefs">projetos</a></p>
+                <p><a href="#" id="contato" class="hrefs">contato</a></p>
+            </div>
+        </div>
+    </header>
+    <div id="side-div">
+        <span id="side-bar-button"><i class="bi bi-list" onclick="sidebar()" id="list-bi"></i></span>
+    </div>
+    <div id="toggle-div">
+        <span id="button-toggle"><i class="bi bi-toggle-off" onclick="mudar_tema()" id="btn-toggle"></i></span>
+    </div>
+    <section id="titulo">
+        <div id="informações-titulo">
+            <h1 id="h1-titulo"><span class="palavra-titulo-span">Pronto</span> <span class="palavra-titulo-span">pra</span> <span class="palavra-titulo-span">transformar</span> <span class="palavra-titulo-span">potencial</span> <span class="palavra-titulo-span">em</span> <span class="palavra-titulo-span">resultados</span><span class="palavra-titulo-span" id="titulo-span-interrogação">?</span></h1>
+            <p id="paragrafo-titulo">Estudante de ciências da computação, desenvolvedor <span class="full-stack" class="span">Full stack</span> em formação, apaixonado por tecnologia e programação. <br> Neste site você consegue acompanhar minhas especialidades e <span class="skills" class="span">skills</span> adiquiridas ao longo do tempo de estudos</p>
+            <button id="entre-contato">entre em contato</button>
+        </div>
+        <img src="src/img/renomear.png" alt="imagem de perfil do Gustavo" id="imagem-gustavo">
+    </section>
+    <div id="programation-logo">
+        <img src="src/img/html logo.png" alt="" class="logo" id="html">
+        <img src="src/img/css logo.png" alt="" class="logo" id="css">
+        <img src="src/img/logo-javascript-icon-512.png" alt=""class="logo" id="javascript">
+        <img src="src/img/php logo.png" alt="" class="logo" id="php">
+        <img src="src/img/python logo.png" alt="" class="logo" id="python">
+    </div>
+    <div id="arrow">
+        <span><i class="bi bi-arrow-left-circle" onclick="fechar_aba()" id="arrow-circle"></i></span>
+    </div>
+    <main>
+        <h2 id="name-projetos">MEUS <span id="meus-projetos">PROJETOS</span></h2>
+        <div id="main-container">
+            <div id="locadora-veiculos" class="projetos" onmouseenter="mouse_pass(this)" onmouseleave="mouse_leave(this)">
+                <a href="#"><img src="src/img/Captura de tela 2025-12-09 151708.png" alt=""></a>
+                <p style="color: white; font-family: tilt Warp; font-size: 21px; margin-bottom: 10px;">Locadora de veículos</p>
+                <p style="color: white; font-family: tilt Warp; text-align: justify;">Locadora simples feita durante o segundo semestre da faculdade, nesse projeto tive meus conhecimentos em Html5 sendo testados.</p>
+                <a href="src/locadorabio.html" class="entrar-projeto" id="href-entrar2"><button class="ver-projeto">ver projeto</button></a>
+            </div>
+            <div id="projetos-python" class="projetos"  onmouseenter="mouse_pass(this)" onmouseleave="mouse_leave(this)">
+                <a href="#"><img src="src/img/Captura de tela 2025-12-09 152026.png" alt=""></a>
+                <p style="color: white; font-family: 'tilt Warp'; font-size: 21px; margin-bottom: 21px;">Python, mini-projetos</p>
+                <p style="color: white; font-family: 'tilt Warp'; text-align: justify;">Projetos voltando à linguagem python. Trabalhando com poo, manipulação de strings e listas.</p>
+                <a href="" class="entrar-projeto" id="href-entrar2"><button class="ver-projeto">ver projeto</button></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-container">
+            <h3><span class="palavra-titulo-span">@2025</span> <span class="palavra-titulo-span">Gustavo</span> <span class="palavra-titulo-span">° </span><span class="palavra-titulo-span">Todos </span> <span class="palavra-titulo-span">os </span><span class="palavra-titulo-span"> direitos</span><span class="palavra-titulo-span"> reservados</span> </h3>
+            <h4><span class="palavra-titulo-span">contato:</span> </h4>
+            <div class="contato-footer">
+                <p><a href="#" class="href-footer" id="github"><i class="bi bi-github">  github</i></a></p>
+                <p><a href="#" class="href-footer" id="linkedin"><i class="bi bi-linkedin">  linkedin</i></a></p>
+            </div>
+            <p>email: gustavomartins160507@gmail.com</p>
+        </div>
+    </footer>
+    <script src="src/arquivo.js" defer></script>
+</body>
+</html>
