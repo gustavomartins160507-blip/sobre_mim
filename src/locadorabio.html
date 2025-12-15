@@ -30,10 +30,10 @@
         <div id="header-content">
             <p id="nome"><span id="print">Print</span><span class="parenteses-span">(</span><span class="nome-span">"Gustavo_dev"</span><span class="parenteses-span">)</span></p>
                 <div id="header-hrefs">
-                    <p><a href="#" id="home" class="hrefs">Home</a></p>
-                    <p><a href="#" id="especialidades" class="hrefs">especialidades</a></p>
+                    <p><a href="../index.html" id="home" class="hrefs">Home</a></p>
+                    <p><a href="" id="especialidades" class="hrefs">especialidades</a></p>
                     <p><a href="#name-projetos" id="projetos" class="hrefs">projetos</a></p>
-                    <p><a href="#" id="contato" class="hrefs">contato</a></p>
+                    <p><a href="../index.html#footer-container" id="contato" class="hrefs">contato</a></p>
                 </div>
             </div>
     </header>
@@ -43,15 +43,57 @@
     <div id="toggle-div">
         <span id="button-toggle"><i class="bi bi-toggle-off" onclick="mudar_tema()" id="btn-toggle"></i></span>
     </div>
+    <div id="top-div">
+        <a href="#main-content"><span id="top-button"><i class="bi bi-caret-up-square" style="padding: 20px; border-radius: 100%; border-style: solid; border-color: rgba(0, 111, 2, 0.8);"></i></span></a>
+    </div>
     <script src="locadora.js" defer></script>
     <main>
         <div id="main-content">
-            <h1 id="projeto-locadora">PROJETO-LOCADORA</h1>
-            <div id="texto">
-                <p style="text-align: justify;">Nessa aba você verá o passo a passo da construção da locadora de veiculos. Estava começando a desenvolver meus mini-projetos e estava indo atrás de estágios na área
+            <h1 id="projeto-locadora" style="padding-top: 40px;">PROJETO-LOCADORA</h1>
+            <div id="texto" class="texto">
+                <p class="paragrafo">Nessa aba você verá o passo a passo da construção da locadora de veiculos. Estava começando a desenvolver meus mini-projetos e estava indo atrás de estágios na área.
                 Nesse sentido, tive um trabalho durante o segundo semestre da faculdade que eu fiz e tive a ideia de adotar como um portifolio para botar no meu curriculo.
-                Nesse projeto foi usado desde o básico como css, html, javascript até frameworks como bootstrap e uma API que solicita Frases do chuck noris na parte de dashboard do site</p>
+                Nesse projeto foi usado desde o básico como css, html, javascript até frameworks como bootstrap e uma API que solicita
+                Frases do chuck noris na parte de dashboard do site.</p>
             </div>
+            <h2 style="margin: 0px; text-align: left; margin-left: 33px;" class="titulo-listado">index do site: </h2>
+            <img src="img/index_locadora.png" alt="index_locadora" id="index_locadora" class="imagem-bio">
+            <div class="texto">
+                <p class="paragrafo">
+                    Aqui vemos a página inicial do site. Nela há dois inputs que são manipulados pelo JavaScript por meio do método getElementById(). Esses inputs acionam a função verificar(), responsável por validar se todos os campos foram preenchidos. 
+                    Caso algum campo esteja vazio, a função identifica o valor como "0", exibe um alert informando que o respectivo campo não foi preenchido e, em seguida, retorna false, impedindo a continuação da ação.
+                    A mesma coisa serve se no campo email não tivermos escrito "@gmail.com".
+                </p>
+            </div>
+            <img src="img/alerts-locadora.png" alt="alerts locadora" class="imagem-bio">
+            <img src="img/codigo_index.png" alt="codigo index" class="imagem-bio">
+            <div class="texto">
+                <p class="paragrafo">No segundo campo, referente à senha, há uma particularidade importante relacionada
+                    à segurança da informação. Uma das práticas mais básicas em aplicações web é a definição de regras 
+                    para a criação de senhas, as quais aumentam significativamente a proteção dos dados dos usuários, 
+                    tornando as credenciais mais difíceis de serem comprometidas.
+                    O código em JavaScript realiza essa validação por meio da função validarSenha(pergunta2), chamada 
+                    a partir do HTML e responsável por analisar o valor informado no campo de senha. Essa função recebe
+                    como parâmetro o conteúdo do campo correspondente e utiliza expressões regulares para verificar se 
+                    a senha atende aos critérios de segurança estabelecidos.
+                    Entre essas validações, é verificada a presença de pelo menos uma letra maiúscula, conforme demonstrado 
+                    no trecho de código que utiliza o método .test(). Caso a condição não seja atendida, o sistema exibe uma
+                    mensagem de alerta ao usuário e impede a continuação da ação, garantindo o cumprimento das regras 
+                    definidas. <code style="font-family: 'tilt Warp';">"(!/[A-Z]/.test(senha)){ window.alert('A senha deve 
+                    conter pelomenos uma letra maiúscula...') return false }"</code>
+                </p>
+            </div>
+            <img src="img/valida_senha_scrip_foto.png" alt="foto script validar senha" class="imagem-bio">
+            <div class="texto">
+                <p class="paragrafo">
+                    O uso do bootstrap no index não foi deixado de lado, ele foi usado junto com javascript para criar a lógica por de trás do "mostrar senha" presente no site.
+                </p>
+                <p class="paragrafo" style="text-align: center;">
+                    segue em baixo como foi feito o mesmo:
+                </p>
+            </div>
+            <img src="img/mostrar_senha_script.png" alt="imagem do mostrar senha" class="imagem-bio" style="height: 170px;">
+            <h2>continua...</h2>
         </div>
     </main>
 </body>
