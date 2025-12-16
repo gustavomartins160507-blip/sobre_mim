@@ -216,24 +216,12 @@ h2{
     background-color: white;
 }
 #header-content.ativa9{
-    background-color: white;
     padding-bottom: 21px;
-}
-#home.ativa10{
-    color: black;
-    background-color: white;
-}
-#especialidades.ativa11{
-    color: black;
-    background-color: white;
-}
-#projetos.ativa12{
-    color: black;
-    background-color: white;
-}
-#contato.ativa13{
-    color: black;
-    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 255, 4, 0.8);
+    border-bottom: solid 5px;
+    border-color:  #3dff40cc;
+    box-shadow: 0 0 20px rgba(0, 255, 4, 0.8);
+
 }
 #home.ativa10:hover,
 #especialidades.ativa11:hover,
@@ -392,4 +380,11 @@ input{
     margin: 0
     20px;
     display: block;
+}
+#projetos-python{
+    height: 346px;
+    word-wrap: 242px;
+}
+#mensagem.ativa17{
+    color:  #3dff40cc;
 }

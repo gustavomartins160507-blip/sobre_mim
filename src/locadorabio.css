@@ -84,3 +84,21 @@ html{
     text-align: left;
     margin-left: 33px;
 }
+.link_style{
+    display: inline;
+    color: black;
+    background-image: linear-gradient(to right,#49cb75,#49cb75);
+    padding-left: 4px;
+    padding-right: 8px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    color: rgb(0, 29, 0);
+    border-radius: 10px;
+}
+.link_style:hover{
+    text-decoration: underline 1.5px;
+    color: rgb(0, 104, 215);
+} 
+.link_style:active{
+    color: rgb(1, 41, 84);
+}

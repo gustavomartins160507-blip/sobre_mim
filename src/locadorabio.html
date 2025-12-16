@@ -44,7 +44,7 @@
         <span id="button-toggle"><i class="bi bi-toggle-off" onclick="mudar_tema()" id="btn-toggle"></i></span>
     </div>
     <div id="top-div">
-        <a href="#main-content"><span id="top-button"><i class="bi bi-caret-up-square" style="padding: 20px; border-radius: 100%; border-style: solid; border-color: rgba(0, 111, 2, 0.8);"></i></span></a>
+        <a href="#main-content"><span id="top-button"><i class="bi bi-arrow-up" style="padding: 20px; border-radius: 100%; border-style: solid; border-color: rgba(0, 111, 2, 0.8);"></i></span></a>
     </div>
     <script src="locadora.js" defer></script>
     <main>
@@ -94,9 +94,29 @@
             </div>
             <img src="img/mostrar_senha_script.png" alt="imagem do mostrar senha" class="imagem-bio" style="height: 170px; margin-bottom:50px;">
             <h2 class="titulo-listado">Página principal: </h2>
+            <img src="img/pagina_principal.png" alt="" class="imagem-bio">
             <div class="texto">
                 <p class="paragrafo">
-                    
+                A página principal da Locadora apresenta diversas particularidades relevantes em sua implementação. 
+                Dentre elas, destaca-se o uso de tabelas em HTML para a organização das imagens dos clientes e de seus 
+                respectivos dados.
+                A tabela é composta por tags específicas que possibilitam uma estilização mais adequada. Por exemplo,
+                ao definir a cor de fundo, não se aplica o estilo diretamente à tag table, mas sim à tag tbody, a qual
+                é semanticamente mais apropriada para esse tipo de seleção e personalização visual.
+                No interior do tbody, foram utilizadas imagens de pessoas fictícias, geradas por meio do site
+                <a href="https://this-person-does-not-exist.com/en" class="link_style" target="_blank">🔗 https://this-person-does-not-exist.com/en
+                </a>.
+                Essa abordagem contribui para a demonstração visual do sistema sem a necessidade de utilizar dados reais.
+                Cabe ainda destacar que os dois botões presentes na interface, “novo cliente” e “mudar tema”, seguem uma 
+                lógica implementada em JavaScript. No caso do botão “novo cliente”, o CSS inicial da aba faz com que ela 
+                permaneça totalmente posicionada à esquerda da tela, de modo que não fique visível nem acessível ao usuário.
+                Embora o elemento esteja presente no DOM, sua posição inicial o torna imperceptível na interface.
+                Nesse contexto, o clique no botão aciona a função clicar(), a qual utiliza o método getElementById para 
+                acessar as variáveis necessárias e alterar dinamicamente os estilos CSS durante a interação. Ao empregar
+                o método classList.toggle('ex:nome'), uma nova classe é adicionada ou removida da aba conforme o clique
+                do usuário. Essa classe é previamente definida no CSS com as configurações responsáveis por tornar a aba 
+                visível, incluindo o ajuste da propriedade left, o uso de position: fixed para mantê-la fixa na tela, além 
+                de outras definições visuais, como cores e estilos específicos conforme o design proposto.
                 </p>
             </div>
         </div>
