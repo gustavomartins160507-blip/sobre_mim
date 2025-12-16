@@ -387,3 +387,9 @@ input{
     flex-direction: row;
     gap: 30px;
 }
+#content-mensagem{
+    text-align: left;
+    margin: 0
+    20px;
+    display: block;
+}

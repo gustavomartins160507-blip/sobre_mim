@@ -16,6 +16,29 @@ const contato=document.getElementById('contato')
 const senhapass=document.getElementById('senha')
 const btnsenha=document.getElementById('btn-senha')
 const ver_projeto=document.querySelectorAll('.ver-projeto')
+function verificar(){
+    let nome=document.getElementById('input-nome').value
+    let email=document.getElementById('email').value
+    let senhapass=document.getElementById('senha').value
+    let mensagem=document.getElementById('mensagem')
+    if(nome.length === 0 || senhapass.length ===0 || email.length ===0 ){
+        window.alert('Campos inválidos')
+        return false
+    }
+    else{
+        let hora=new Date().getHours()
+            if(hora < 12){
+                mensagem.innerHTML= `<h2 id="content-mensagem">Bom dia, ${nome}. Seja Bem-vindo!</h2>`
+            }
+            else if(hora >= 12 & hora <18){
+                mensagem.innerHTML=`<h2 id="content-mensagem">Boa tarde, ${nome}. Seja Bem-vindo!</h2>`
+            }
+            else{
+                mensagem.innerHTML=`<h2 id="content-mensagem">Boa noite, ${nome}. Seja Bem-vindo!</h2>`
+            }
+        return false
+        }
+    }
 function sidebar(){
     aba.classList.toggle('mostrar-aba')
     arrow.classList.toggle('mostrar_arrow')

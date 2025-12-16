@@ -15,15 +15,15 @@
             <span class="nome-span">"Gustavo_dev"</span>
             <span class="parenteses-span">)</span>
         </p>
-        <section class="form">
+        <form class="form" onsubmit="return verificar()">
             <input type="text" name="nome" id="input-nome" placeholder="Nome:">
             <input type="email" name="email" id="email" placeholder="Email:">
             <div id="password">
                 <input type="password" name="senha" id="senha" placeholder="Senha:">
                 <span><i class="bi bi-eye" id="btn-senha" onclick="mostrar_senha()"></i></span>
             </div>
-            <input type="button" id="entrar" value="ENTRAR">
-        </section>
+            <input type="submit" id="entrar" value="ENTRAR" onsubmit="return verificar()">
+        </form>
     </div>
     <header>
         <div id="header-content">
@@ -36,6 +36,8 @@
             </div>
         </div>
     </header>
+    <div id="mensagem">
+    </div>
     <div id="side-div">
         <span id="side-bar-button"><i class="bi bi-list" onclick="sidebar()" id="list-bi"></i></span>
     </div>

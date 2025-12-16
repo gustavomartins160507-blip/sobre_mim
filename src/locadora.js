@@ -12,7 +12,6 @@ function sidebar(){
 }
 function mudar_tema(){
   if (!body || !btntoggle) return
-
   if (btntoggle.classList.contains('bi-toggle-off')){
     btntoggle.classList.replace('bi-toggle-off','bi-toggle-on')
   } else {
@@ -20,7 +19,6 @@ function mudar_tema(){
   }
   body.classList.toggle('ativa1')
   main_content.classList.toggle('ativa2')
-
 }
 function mostrar_senha(){
   if (!senhapass || !btnsenha) return
@@ -35,7 +33,6 @@ function mostrar_senha(){
 }
 const top_button = document.getElementById('top-button')
 const pixel_aparecer = 300
-
 function verificarScroll() {
   if (window.scrollY > pixel_aparecer) {
     top_button.classList.add('mostrar')
@@ -43,6 +40,5 @@ function verificarScroll() {
     top_button.classList.remove('mostrar')
   }
 }
-
 window.addEventListener('scroll', verificarScroll)
 window.addEventListener('load', verificarScroll)

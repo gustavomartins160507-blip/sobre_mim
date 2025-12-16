@@ -79,3 +79,8 @@ html{
     transform: translateY(0);
     pointer-events: auto;
 }
+.titulo-listado{
+    margin: 0px;
+    text-align: left;
+    margin-left: 33px;
+}
